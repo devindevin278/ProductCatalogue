@@ -1,6 +1,8 @@
 @extends('master')
 
 @section('title', 'Home Page')
+@section('description', 'Shop your favorite wibu stuff from thousands of choice available')
+@section('keywords', 'shop, wibu, gundam, product, list, buy')
 
 @section('content')
     <p class="text-center">Welcome to The Wibu Shop</p>

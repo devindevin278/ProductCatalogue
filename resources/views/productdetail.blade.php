@@ -1,6 +1,6 @@
 @extends('master')
 
-@section('title')
+@section('title', 'Product detail')
 
 @section('content')
     <div class="container ps-5 d-flex">
