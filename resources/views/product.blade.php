@@ -3,45 +3,37 @@
 @section('title', 'Product List')
 
 @section('content')
-<div class="list container ">
+<h2 class="text-center">Find your dream wibu stuff here</h2>
+    <div class="container list">
             @foreach($product as $item)
-            @if($item['type'] == 'r')
 
-            <a href="/productdetail?key={{ $item['index'] }}">
-                <div class="card" style="background-color: silver; border-color; width: 18rem;";>
-                    <img class="card-img-top" src="{{ asset('images/' . $item['index']  . '.jfif' ) }}" alt="">
-                    <h3>{{ $item['name'] }}</h3>
-                    <p>{{ $item['price'] }}</p>
-                    <p>{{ $item['type'] }}</p>
+            <a class="" href="/productdetail?key={{ $item['index'] }}">
 
-                </div>
-            </a>
+            @if($item['type'] == 'R')
 
-            @elseif ($item['type'] == 'sr')
+                <div class="card d-block mx-3 p-3" style="background-color: silver; border-color; width: 18rem;";>
 
-            <a href="/productdetail?key={{ $item['index'] }}">
-                <div class="card" style="background-color: gold; border-color; width: 18rem;";>
-                    <img class="card-img-top" src="{{ asset('images/' . $item['index']  . '.jfif' ) }}" alt="">
-                    <h3>{{ $item['name'] }}</h3>
-                    <p>{{ $item['price'] }}</p>
-                    <p>{{ $item['type'] }}</p>
+            @elseif ($item['type'] == 'SR')
 
-                </div>
-            </a>
+                <div class="card d-block mx-3 p-3" style="background-color: gold; border-color; width: 18rem;";>
 
-            @elseif ($item['type'] == 'ssr')
+            @elseif ($item['type'] == 'SSR')
 
-            <a href="/productdetail?key={{ $item['index'] }}">
-                <div class="card" style="background-color: red; border-color; width: 18rem;";>
-                    <img class="card-img-top" src="{{ asset('images/' . $item['index']  . '.jfif' ) }}" alt="">
-                    <h3>{{ $item['name'] }}</h3>
-                    <p>{{ $item['price'] }}</p>
-                    <p>{{ $item['type'] }}</p>
-
-                </div>
-            </a>
+                    <div class="card d-block mx-3 p-3" style="background-color: red; border-color; width: 18rem;";>
 
             @endif
+
+                    <div class="crop">
+                        <img class="card-img-top" src="{{ asset('images/' . $item['index']  . '.jfif' ) }}" alt="">
+                    </div>
+                    <h3 class="fs-5">{{ $item['name'] }}</h3>
+                    <p class="fs-4">{{ "Rp." . $item['price'] . ",-" }}</p>
+                    <p>{{ "Type: " . $item['type'] }}</p>
+
+                </div>
+            </a>
+
+
             @endforeach
         </div>
 

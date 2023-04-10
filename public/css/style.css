@@ -1,0 +1,28 @@
+a:link {
+    text-decoration: none;
+}
+
+.list {
+    display: flex;
+    overflow-x: scroll;
+    padding: 10px;
+}
+
+.crop {
+    overflow: hidden;
+    height: 15rem;
+}
+
+.card:hover {
+    transform: scale(1.02);
+    transition: 0.3s;
+    opacity: 95%;
+}
+
+.desc {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+
