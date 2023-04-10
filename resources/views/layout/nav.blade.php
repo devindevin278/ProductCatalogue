@@ -1,5 +1,5 @@
 
-<nav class="navbar navbar-expand-lg bg-body-tertiary text-center">
+<nav class="navbar navbar-expand-lg text-center" >
     <div class="container-fluid">
       <div class="collapse navbar-collapse" id="navbarNavDropdown">
 
