@@ -5,7 +5,7 @@ This is a web application where customer, especially wibu, can find their favour
 
 
 
-!(Home)[https://github.com/devindevin278/ProductCatalogue/blob/main/public/images/home.jfif]
+![Home](https://github.com/devindevin278/ProductCatalogue/blob/main/public/images/home.jfif)
 
 Laravel is accessible, powerful, and provides tools required for large, robust applications.
 
