@@ -20,6 +20,3 @@ In this page, you can look at some of the products available in the store. By cl
 ## Product Detail
 Here, the detail of the product are provided, including the description.
 ![Product Detail](https://github.com/devindevin278/ProductCatalogue/blob/main/public/images/productDetail.jfif)
-
-Laravel is accessible, powerful, and provides tools required for large, robust applications.
-
